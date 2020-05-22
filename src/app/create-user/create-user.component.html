@@ -1,0 +1,28 @@
+<div class="register-container">
+    <form [formGroup]='register' (ngSubmit)='onSubmit(register.value)' >
+        <div class="register-container-items">
+            <label for="username">Username</label>
+            <input type="text" formControlName='username'>
+          </div>
+
+          <div class="register-container-items">
+            <label for="password">Password</label>
+            <input type="text" formControlName='password'>
+          </div>
+
+          <div class="register-container-items">
+              <label for="location">Location</label>
+              <input type="text" formControlName='location'>
+            </div>
+
+            <div class="register-container-items">
+                <label for="company">Company</label>
+                <input type="text" formControlName='company'>
+              </div>
+
+          <div class="register-container-items">
+              <button class="submit-button" type="submit" >submit</button>
+          </div>
+    </form>
+
+    </div>

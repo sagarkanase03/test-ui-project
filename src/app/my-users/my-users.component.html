@@ -1,0 +1,18 @@
+<div class="my-user-container">
+    <button (click)="get_users()">Click Me</button>
+    <ul ngFor='let u of user'></ul>
+
+    <table>
+      <tr>
+          <th>Username</th>
+          <th>Location</th>
+          <th>Company</th>
+      </tr>
+      <tr *ngFor='let u of data'>
+        <td>{{u.username}}</td>
+        <td>{{u.location}}</td>
+        <td>{{u.company}}</td>
+      </tr>
+    </table>
+
+</div>
